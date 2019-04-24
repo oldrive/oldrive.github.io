@@ -14,11 +14,19 @@ tag: hadoop
 --------------------------
 
 
+-----------------------
+
+
 myid自动发生修改
 
 
 思路
 -----------------------------
+
+
+-----------------------
+
+
 启动zookeeper前确认myid的正确，然后正常启动zookeeper--->hbase,看上去没有报错，但重新cat myid却发现自己改了。查看hbase/logs/hbase-root-zookeeper-master.out中的日志，发现如下的报错信息：
 
 ```
@@ -43,11 +51,17 @@ java.net.BindException: Address already in use
 ----------------------------
 
 
+-----------------------
+
+
 在./hbase/conf/hbase-env.sh中设置HBASE_MANAGES_ZK 改成false（默认是true），让hbase启动时不启动zookeeper
 
 
 感想
 ------------------------------
+
+
+-----------------------
 
 
 不学会看日志瞎几把百度你只会原地踏步，还解决不了问题
