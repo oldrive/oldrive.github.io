@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  hadoop使用心得随笔记
+title:  Windows下MyEclipse开发hadoop
 date:   2019-04-10
-categories: document
+categories: 技术
 tag: hadoop
 ---
 
@@ -10,12 +10,10 @@ tag: hadoop
 {:toc}
 
 
-Windows下MyEclipse开发hadoop的一些注意点			
-====================================
-
-
 步骤
 -------------------------------------
+
+----------------------------
 
 
 1）装插件，百度一大堆
@@ -37,6 +35,8 @@ Windows下MyEclipse开发hadoop的一些注意点
 
 可能错误
 ------------------------
+
+-----------------------
 
 
 连接不上DFS时，检查Host和Port无误后，查看各自结点的IP，若是发生了变化，除了在Linux下的/hosts（具体路径忘记）修改，还得重复步骤3，把变化后的IP替换原IP
